@@ -102,6 +102,7 @@ main h1 {
   font-size: 14px;
   line-height: 16px;
   color: #777;
+  text-align: left;
 }
 footer {
   width: 100%;
@@ -129,6 +130,7 @@ main p {
   font-size: 18px;
   line-height: 28px;
   color: #444;
+  text-align: left;
 }
 
 /* Modal */
