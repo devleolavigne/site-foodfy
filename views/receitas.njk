@@ -5,7 +5,7 @@
 {% block content %}
   <div id="container">
     <header>
-      <a href="/"><img src="assets/logo.png" alt="Foodfy"/></a>
+      <a href="/"><img src="/assets/logo.png" alt="Foodfy"/></a>
       <nav>
         <li>
           <a href="/sobre">Sobre</a>
@@ -18,7 +18,7 @@
     <main>
       <div id="grid-receitas">
         {% for receita in receitas %}
-          <div class="receita" id="burger.png">
+          <div class="receita" id="{{receita.id}}">
             <img src="{{receita.image}}" alt=""/>
             <h3>{{receita.title}}</h3>
             <p>{{receita.author}}</p>
