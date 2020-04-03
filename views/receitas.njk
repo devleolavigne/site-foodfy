@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+{% block title %}
+  <title>Receitas</title>
+{% endblock title %}
+{% block content %}
+  <div id="container">
+    <header>
+      <a href="/"><img src="assets/logo.png" alt="Foodfy"/></a>
+      <nav>
+        <li>
+          <a href="/sobre">Sobre</a>
+        </li>
+        <li>
+          <a href="/receitas">Receitas</a>
+        </li>
+      </nav>
+    </header>
+    <main>
+      <div id="grid-receitas">
+        {% for receita in receitas %}
+          <div class="receita" id="burger.png">
+            <img src="{{receita.image}}" alt=""/>
+            <h3>{{receita.title}}</h3>
+            <p>{{receita.author}}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </main>
+  </div>
+{% endblock content %}
