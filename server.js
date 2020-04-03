@@ -24,4 +24,4 @@ server.get("/receita", (req, res) => {
   return res.render("receita");
 });
 
-server.listen(3333);
+server.listen(3000);
